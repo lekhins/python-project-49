@@ -1,5 +1,6 @@
 from brain_games.cli import run, get_answer
 
+
 def run_game_engine(game):
     player_name = run(game.CONDITION)
     score = 0

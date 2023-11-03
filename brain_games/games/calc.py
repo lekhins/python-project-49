@@ -1,5 +1,5 @@
-from random import randint, choice
 from operator import add, sub, mul
+from random import randint, choice
 
 CONDITION = "What is the result of the expression?"
 OPERATIONS = [("+", add), ("-", sub), ("*", mul)]
