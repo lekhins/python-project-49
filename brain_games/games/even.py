@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from random import randint
 from typing import Tuple
 CONDITION = 'Answer "yes" if the number is even, otherwise answer "no".'
