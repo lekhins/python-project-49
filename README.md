@@ -5,11 +5,15 @@
 
 ## Installation
 
+Установите poetry
+
 ## Welcome
 
 Brain Games. Part 1 project on Hexlet(https://ru.hexlet.io/professions/python/projects/49)
 
 ## First run:
+
+https://asciinema.org/a/jPwUwPcmEUlzRNvGXmVRaFIWg
 
 ## Even number:
 

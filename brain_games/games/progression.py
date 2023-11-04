@@ -21,4 +21,4 @@ def run_game():
 
     progression[random_index] = ".."
     question = " ".join(progression)
-    return (question, correct)
+    return question, correct

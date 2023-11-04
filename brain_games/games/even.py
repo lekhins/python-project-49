@@ -1,9 +1,9 @@
 from random import randint
-
+from typing import Tuple
 CONDITION = 'Answer "yes" if number even otherwise answer "no".'
 
 
-def run_game():
+def run_game() -> Tuple[int, str]:
     question = randint(1, 100)
 
     if question % 2 == 0:
@@ -11,4 +11,4 @@ def run_game():
     else:
         is_even = "no"
 
-    return (question, is_even)
+    return question, is_even

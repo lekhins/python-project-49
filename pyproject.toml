@@ -2,7 +2,7 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "First-project-on-Hexlet"
-authors = ["alekseenkolesha@yandex.ru"]
+authors = ["tastychef <alekseenkolesha@yandex.ru>"]
 repository = "https://github.com/tastychef/python-project-49.git"
 readme = "README.md"
 packages = [
@@ -15,6 +15,7 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.10"
 prompt = "^0.4.1"
+pytest = "^7.4.3"
 
 
 [tool.poetry.group.dev.dependencies]

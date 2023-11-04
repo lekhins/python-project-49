@@ -10,7 +10,8 @@ def run_game_engine(game):
         answer = get_answer(question)
 
         if answer != correct:
-            print(f"'{answer}' is wrong answer ;(.\n Correct answer was '{correct}'.")
+            print(f"'{answer}' is wrong answer ;(."
+                  f"\n Correct answer was '{correct}'.")
             print(f"Let's try again, {player_name}!")
             return
         else:
