@@ -13,24 +13,24 @@ Brain Games. Part 1 project on Hexlet(https://ru.hexlet.io/professions/python/pr
 
 ## First run:
 
-https://asciinema.org/a/jPwUwPcmEUlzRNvGXmVRaFIWg
+[![asciicast](https://i.imgur.com/3ZrujSa.png)](https://asciinema.org/a/jPwUwPcmEUlzRNvGXmVRaFIWg)
 
 ## Even number:
 
-https://asciinema.org/a/RSLbulwxkQ6piba5EfYu4poia
+[![asciicast](https://i.imgur.com/WWwo3GW.png)](https://asciinema.org/a/ni50CgyPbeQSRyYf0PztMf9Z8)
 
 ## Calculate:
 
-https://asciinema.org/a/E0A0Vv08L5ogzKVSG33Xjsmi7
+[![asciicast](https://i.imgur.com/GNz0yW0.png)](https://asciinema.org/a/pHERJTk2FZ2x7auqOnjl499Ds)
 
 ## Common divisor:
 
-https://asciinema.org/a/qsz7BPwuGcUgWC3b2l7vxUK9n
+[![asciicast](https://i.imgur.com/EWRFEbw.png)](https://asciinema.org/a/uLpmHBSrjym5eWJwzavzw22lX)
 
 ## Progression:
 
-https://asciinema.org/a/OCyP5BtlzsGeRmrGZxm2nx7IM
+[![asciicast](https://i.imgur.com/q5PDrUT.png)](https://asciinema.org/a/kxeEjBZGASoLoORtMBegZRdQ0)
 
 ## Prime number:
 
-https://asciinema.org/a/6RV1bH3rHlLuUmHUCp0B0OA5R
+[![asciicast](https://i.imgur.com/TrGIY8j.png)](https://asciinema.org/a/9t5QRJfpLJdkHIqe9fPgDNhMM)
