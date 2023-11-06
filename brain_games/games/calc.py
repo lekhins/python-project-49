@@ -25,12 +25,9 @@ def run_game() -> Tuple[str, str]:
     return question, str(correct)
 
 
-def process_game(question_generator, start_game_text):
-    pass
-
 
 def play():
-    process_game(
+    process(
         question_generator=run_game_engine,
         start_game_text=CONDITION,
     )
