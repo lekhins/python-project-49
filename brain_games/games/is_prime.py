@@ -15,7 +15,6 @@ def is_prime(num):
     return True
 
 
-# adfsfds
 def run_game():
     question = randint(0, 100)
     prime = 'yes' if is_prime(question) else 'no'

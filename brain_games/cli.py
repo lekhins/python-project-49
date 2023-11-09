@@ -1,7 +1,7 @@
 import prompt
 
 
-def run(welcome: str = None):
+def run(welcome=""):
     print("Welcome to the Brain Games!")
     if welcome:
         print(f"{welcome}")
@@ -11,7 +11,7 @@ def run(welcome: str = None):
     return name
 
 
-def get_answer(question: str):
+def get_answer(question):
     print(f"Question: {question}")
     answer = prompt.string("Your answer: ")
     return answer
