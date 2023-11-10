@@ -2,8 +2,6 @@ import prompt
 
 INCORRECT_ANSWER = '''\'{}\' is wrong answer ;(. Correct answer was \'{}\'.
 Let\'s try again, {}!'''
-
-
 def run_game(condition: str, generate_game_data: tuple):
     # Приветствие
     print('Welcome to the Brain Games!')
@@ -25,7 +23,7 @@ def run_game(condition: str, generate_game_data: tuple):
         # Ответ в зависимости корректности ответа
         if not bool_result:
             # Итого: неправильный ответ
-            print(INCORRECT_ANSWER)
+            print(INCORRECT_ANSWER.format(user_answer, correct_result, name))
             break
 
         # Итого: правильный ответ
