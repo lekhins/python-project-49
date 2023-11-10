@@ -2,6 +2,8 @@ import prompt
 
 INCORRECT_ANSWER = '''\'{}\' is wrong answer ;(. Correct answer was \'{}\'.
 Let\'s try again, \'{}\'!'''
+
+
 def run_game(condition: str, generate_game_data: tuple):
     """
 
