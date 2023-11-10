@@ -2,8 +2,16 @@ import prompt
 
 INCORRECT_ANSWER = '''\'{}\' is wrong answer ;(. Correct answer was \'{}\'.
 Let\'s try again, \'{}\'!'''
-def run_game(condition: str, generate_game_data: tuple):
-    """Приветствие"""
+def run_game(condition: str, generate_game_data: tuple) ->None:
+    """
+    Приветствие
+    Args:
+        condition:
+        generate_game_data:
+
+    Returns:
+
+    """
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
