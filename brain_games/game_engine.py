@@ -1,8 +1,7 @@
 import prompt
 
-INCORRECT_ANSWER = '''\'{}\' is wrong answer ;(. Correct answer was \'{}\'.
-Let\'s try again, \'{}\'!'''
-def run_game(condition: str, generate_game_data: tuple) ->None:
+
+def run_game(condition: str, generate_game_data: tuple) -> None:
     """
     Приветствие
     Args:
@@ -31,7 +30,9 @@ def run_game(condition: str, generate_game_data: tuple) ->None:
         """Ответ в зависимости корректности ответа"""
         if not bool_result:
             # Итого: неправильный ответ
-            print(INCORRECT_ANSWER.format(user_answer, correct_result, name))
+            #print(INCORRECT_ANSWER.format(user_answer, correct_result, name))
+            print(f'{user_answer} is wrong answer ;(. Correct answer was {correct_result}')
+            print(f'Let\'s try again, {name}!')
             break
 
         """Итого: правильный ответ"""
