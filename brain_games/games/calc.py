@@ -11,7 +11,7 @@ def generate_game_data() -> tuple:
     random_number1 = random.randint(1, 100)
     random_number2 = random.randint(1, 100)
     operation = random.choice(['+', '-', '*'])
-    question = f'{random_number1} {operation} {random_number2}'
+
 
     """Алгоритм расчет верного ответа"""
     correct_result = True  # переменная по дефолту
