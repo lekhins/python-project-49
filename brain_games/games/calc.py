@@ -1,24 +1,35 @@
-from operator import add, sub, mul
 from random import randint, choice
+from typing import Callable
 
-from brain_games.engine_for_games import run_game_engine
+from brain_games.game_engine import run_game
 
 CONDITION = 'What is the result of the expression?'
-OPERATIONS = [("+", add), ("-", sub), ("*", mul)]
+
+PLUS = '+'
+MINUS = '-'
+MULTIPLY = '*'
+
+NAME_OPERATIONS = (MINUS, PLUS, MULTIPLY)
 
 
-def run_game():
-    a = randint(1, 100)
-    b = randint(1, 100)
+def generate_game_data() -> tuple:
+    # Генерация данных
+    random_number1 = randint(1, 100)
+    random_number2 = randint(1, 100)
+    operation = choice(NAME_OPERATIONS)
+    question = f'{random_number1} {operation} {random_number2}'
 
-    operator, func = choice(OPERATIONS)
+    # Алгоритм расчет верного ответа
+    correct_result = True  # переменная по дефолту
+    if operation == PLUS:
+        correct_result = random_number1 + random_number2
+    elif operation == MINUS:
+        correct_result = random_number1 - random_number2
+    elif operation == MULTIPLY:
+        correct_result = random_number1 * random_number2
 
-    question = f"{a} {operator} {b}"
-
-    correct = func(a, b)
-
-    return question, str(correct)
+    return question, correct_result
 
 
-def play():
-    run_game_engine(game=CONDITION)
+def play() -> Callable:
+    run_game(CONDITION, generate_game_data)
