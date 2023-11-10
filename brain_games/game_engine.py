@@ -3,7 +3,7 @@ import prompt
 INCORRECT_ANSWER = '''\'{}\' is wrong answer ;(. Correct answer was \'{}\'.'''
 
 
-def run_game(condition: str, generate_game_data: tuple) -> None:
+def run_game(condition: str, generate_game_data: tuple):
     # Приветствие
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
