@@ -1,5 +1,8 @@
 import prompt
 
+INCORRECT_ANSWER = '''\'{}\' is wrong answer ;(. Correct answer was \'{}\'.
+Let\'s try again, {}!'''
+
 
 def run_game(condition: str, generate_game_data: tuple):
     # Приветствие
@@ -22,8 +25,7 @@ def run_game(condition: str, generate_game_data: tuple):
         # Ответ в зависимости корректности ответа
         if not bool_result:
             # Итого: неправильный ответ
-            print(f'''\'{user_answer}\' is wrong answer ;(. Correct answer was \'{correct_result}\'.
-Let\'s try again, {name}!''')
+            print(INCORRECT_ANSWER)
             break
 
         # Итого: правильный ответ
