@@ -32,6 +32,4 @@ def generate_game_data() -> tuple:
 
 
 def play() -> Callable:
-    """Вызов движка, который подтягивает условие
-    и функцию, которая реализует конкретную игру"""
     run_game(CONDITION, generate_game_data)
