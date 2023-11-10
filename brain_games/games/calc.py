@@ -13,13 +13,13 @@ NAME_OPERATIONS = (MINUS, PLUS, MULTIPLY)
 
 
 def generate_game_data() -> tuple:
-    # Генерация данных
+    """Генерация данных"""
     random_number1 = randint(1, 100)
     random_number2 = randint(1, 100)
     operation = choice(NAME_OPERATIONS)
     question = f'{random_number1} {operation} {random_number2}'
 
-    # Алгоритм расчет верного ответа
+    """Алгоритм расчет верного ответа"""
     correct_result = True  # переменная по дефолту
     if operation == PLUS:
         correct_result = random_number1 + random_number2
@@ -32,4 +32,5 @@ def generate_game_data() -> tuple:
 
 
 def play() -> Callable:
+    """Вызов движка, который подтягивает условие и функцию, которая реализует конкретную игру"""
     run_game(CONDITION, generate_game_data)
