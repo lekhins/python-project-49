@@ -1,9 +1,8 @@
-from brain_games.engine_for_games import run_game_engine
-from brain_games.games import is_prime
+from brain_games.games.is_prime import play
 
 
 def main():
-    run_game_engine(is_prime)
+    play()
 
 
 if __name__ == "__main__":

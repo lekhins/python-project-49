@@ -1,5 +1,8 @@
 import math
 from random import randint
+from typing import Callable
+
+from brain_games.game_engine import run_game
 
 CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
@@ -15,8 +18,12 @@ def is_prime(num):
     return True
 
 
-def run_game():
+def generate_game_data():
     question = randint(0, 100)
     prime = 'yes' if is_prime(question) else 'no'
 
     return question, prime
+
+
+def play() -> Callable:
+    run_game(CONDITION, generate_game_data)

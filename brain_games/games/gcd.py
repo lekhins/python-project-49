@@ -1,11 +1,14 @@
 from math import gcd
 from random import randint
+from typing import Callable
 from typing import Tuple
+
+from brain_games.game_engine import run_game
 
 CONDITION = "Find the greatest common divisor of given numbers."
 
 
-def run_game() -> Tuple[str, str]:
+def generate_game_data() -> Tuple[str, str]:
     a = randint(1, 100)
     b = randint(1, 100)
 
@@ -14,3 +17,7 @@ def run_game() -> Tuple[str, str]:
     correct = gcd(a, b)
 
     return question, str(correct)
+
+
+def play() -> Callable:
+    run_game(CONDITION, generate_game_data)
