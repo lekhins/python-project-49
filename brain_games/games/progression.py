@@ -6,6 +6,10 @@ CONDITION = "What number is missing in the progression?"
 
 
 def generate_progression():
+    """
+    Генерация данных
+    :return:
+    """
     start = randint(1, 100)
     step = randint(1, 10)
     stop = start + step * 10

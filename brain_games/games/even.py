@@ -7,6 +7,10 @@ CONDITION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def generate_game_data() -> Tuple[int, str]:
+    """
+    Генерация данных
+    :return:
+    """
     question = randint(1, 100)
 
     if question % 2 == 0:

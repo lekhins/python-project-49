@@ -8,6 +8,10 @@ CONDITION = "Find the greatest common divisor of given numbers."
 
 
 def generate_game_data() -> Tuple[str, str]:
+    """
+    Генерация данных
+    :return:
+    """
     a = randint(1, 100)
     b = randint(1, 100)
 

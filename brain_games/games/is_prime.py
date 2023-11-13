@@ -7,6 +7,10 @@ CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
+    """
+    Генерация данных
+    :return:
+    """
     root = math.sqrt(num)
     i = 2
     while i <= root:
