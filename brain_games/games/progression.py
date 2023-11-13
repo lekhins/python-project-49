@@ -26,5 +26,5 @@ def generate_game_data():
     return question, correct
 
 
-def play() -> Callable:
+def play():
     run_game(CONDITION, generate_game_data)

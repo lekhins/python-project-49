@@ -19,5 +19,5 @@ def generate_game_data() -> Tuple[str, str]:
     return question, str(correct)
 
 
-def play() -> Callable:
+def play():
     run_game(CONDITION, generate_game_data)

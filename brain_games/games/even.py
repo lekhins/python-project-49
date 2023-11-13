@@ -18,5 +18,5 @@ def generate_game_data() -> Tuple[int, str]:
     return question, is_even
 
 
-def play() -> Callable:
+def play():
     run_game(CONDITION, generate_game_data)
