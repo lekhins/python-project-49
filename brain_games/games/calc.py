@@ -1,6 +1,5 @@
 import random
 
-
 from brain_games.game_engine import run_game
 
 CONDITION = 'What is the result of the expression?'

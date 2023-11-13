@@ -1,5 +1,4 @@
 from random import randint
-from typing import Callable
 from typing import Tuple
 
 from brain_games.game_engine import run_game
