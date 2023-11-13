@@ -30,6 +30,7 @@ def run_game(condition: str, generate_game_data: tuple):
 
         """Итого: правильный ответ"""
         print('Correct!')
-        print(f'Congratulations, {name}!')
 
         game_loop += 1
+
+    print(f'Congratulations, {name}!')
