@@ -11,9 +11,9 @@ def run_game(condition: str, generate_game_data: tuple):
 
     """Принтуем правила игры и генерируем циклы"""
     print(condition)
-    game_cicl = 1
+    game_loop = 0
 
-    while game_cicl <= 3:
+    while game_loop <= 3:
         question, correct_result = generate_game_data()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
@@ -30,7 +30,6 @@ def run_game(condition: str, generate_game_data: tuple):
 
         """Итого: правильный ответ"""
         print('Correct!')
-        if game_cicl == 3:
-            print(f'Congratulations, {name}!')
+        print(f'Congratulations, {name}!')
 
-        game_cicl += 1
+        game_loop += 1
