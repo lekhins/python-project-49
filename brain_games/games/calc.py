@@ -1,5 +1,5 @@
 import random
-from typing import Callable
+
 
 from brain_games.game_engine import run_game
 
@@ -28,5 +28,5 @@ def generate_game_data() -> tuple:
     return question, correct_result
 
 
-def play() -> Callable:
+def play():
     run_game(CONDITION, generate_game_data)
