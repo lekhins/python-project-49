@@ -4,7 +4,12 @@ INCORRECT_ANSWER = '''\'{}\' is wrong answer ;(. Correct answer was \'{}\'.'''
 
 
 def run_game(condition: str, generate_game_data: tuple):
-    # Приветствие
+    """
+    Приветствие
+    :param condition:
+    :param generate_game_data:
+    :return:
+    """
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
