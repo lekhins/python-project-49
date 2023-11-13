@@ -13,7 +13,7 @@ def run_game(condition: str, generate_game_data: tuple):
     print(condition)
     game_loop = 0
 
-    while game_loop <= 3:
+    while game_loop <= 2:
         question, correct_result = generate_game_data()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
