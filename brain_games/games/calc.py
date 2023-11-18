@@ -6,10 +6,7 @@ CONDITION = 'What is the result of the expression?'
 
 
 def generate_game_data() -> tuple:
-    """
-    Генерация данных
-    :return:
-    """
+    """Генерация данных"""
     random_number1 = random.randint(1, 100)
     random_number2 = random.randint(1, 100)
     operation = random.choice(['+', '-', '*'])
