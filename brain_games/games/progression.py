@@ -18,7 +18,7 @@ def generate_progression():
     return progression
 
 
-def generate_game_data()-> Tuple[str, str]:
+def generate_game_data() -> Tuple[str, str]:
     progression = generate_progression()
 
     random_index = randint(0, 9)
