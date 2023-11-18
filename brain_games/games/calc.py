@@ -27,4 +27,4 @@ def generate_game_data() -> tuple:
 
 
 def play():
-    run_game(CONDITION, generate_game_data())
+    run_game(CONDITION, generate_game_data)
