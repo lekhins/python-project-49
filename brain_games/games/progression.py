@@ -1,5 +1,5 @@
 from random import randint
-
+from typing import Tuple
 from brain_games.game_engine import run_game
 
 CONDITION = "What number is missing in the progression?"
@@ -18,7 +18,7 @@ def generate_progression():
     return progression
 
 
-def generate_game_data():
+def generate_game_data()-> Tuple[str, str]:
     progression = generate_progression()
 
     random_index = randint(0, 9)

@@ -1,6 +1,6 @@
 import math
 from random import randint
-
+from typing import Tuple
 from brain_games.game_engine import run_game
 
 CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -18,7 +18,7 @@ def is_prime(num):
     return True
 
 
-def generate_game_data():
+def generate_game_data()-> Tuple[int, str]:
     question = randint(0, 100)
     prime = 'yes' if is_prime(question) else 'no'
 
