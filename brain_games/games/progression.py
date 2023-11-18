@@ -30,4 +30,4 @@ def generate_game_data():
 
 
 def play():
-    run_game(CONDITION, generate_game_data)
+    run_game(CONDITION, generate_game_data())
